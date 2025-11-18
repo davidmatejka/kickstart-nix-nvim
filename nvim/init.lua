@@ -25,7 +25,7 @@ opt.spell = true
 opt.spelllang = 'en'
 
 opt.expandtab = true
-opt.tabstop = 2
+opt.tabstop = 4
 opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.foldenable = true

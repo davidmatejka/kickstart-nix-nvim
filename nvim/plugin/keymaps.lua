@@ -17,6 +17,8 @@ keymap.set('n', ']b', vim.cmd.bnext, { silent = true, desc = 'next [b]uffer' })
 keymap.set('n', '[B', vim.cmd.bfirst, { silent = true, desc = 'first [B]uffer' })
 keymap.set('n', ']B', vim.cmd.blast, { silent = true, desc = 'last [B]uffer' })
 
+keymap.set('n', '<leader>e', "<cmd> Explore")
+
 -- Toggle the quickfix list (only opens if it is populated)
 local function toggle_qf_list()
   local qf_exists = false
@@ -133,7 +135,7 @@ keymap.set('n', '<space>tq', vim.cmd.tabclose, { desc = '[t]ab: [q]uit/close' })
 
 local severity = diagnostic.severity
 
-keymap.set('n', '<space>e', function()
+keymap.set('n', '<space>df', function()
   local _, winid = diagnostic.open_float(nil, { scope = 'line' })
   if not winid then
     vim.notify('no diagnostics found', vim.log.levels.INFO)
