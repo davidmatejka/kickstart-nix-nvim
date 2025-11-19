@@ -17,7 +17,7 @@ keymap.set('n', ']b', vim.cmd.bnext, { silent = true, desc = 'next [b]uffer' })
 keymap.set('n', '[B', vim.cmd.bfirst, { silent = true, desc = 'first [B]uffer' })
 keymap.set('n', ']B', vim.cmd.blast, { silent = true, desc = 'last [B]uffer' })
 
-keymap.set('n', '<leader>e', "<cmd> Explore")
+keymap.set('n', '<leader>e', "<cmd> Explore <CR>")
 
 -- Toggle the quickfix list (only opens if it is populated)
 local function toggle_qf_list()
