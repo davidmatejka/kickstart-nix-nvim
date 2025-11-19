@@ -5,8 +5,8 @@ local opt = vim.o
 
 -- <leader> key. Defaults to `\`. Some people prefer space.
 -- The default leader is '\'. Some people prefer <space>. Uncomment this if you do, too.
--- vim.g.mapleader = ' '
--- vim.g.maplocalleader = ' '
+ vim.g.mapleader = ' '
+ vim.g.maplocalleader = '\\'
 
 -- See :h <option> to see what the options do
 
@@ -26,8 +26,8 @@ opt.spelllang = 'en'
 
 opt.expandtab = true
 opt.tabstop = 4
-opt.softtabstop = 2
-opt.shiftwidth = 2
+opt.softtabstop = 4
+opt.shiftwidth = 4
 opt.foldenable = true
 opt.history = 2000
 opt.nrformats = 'bin,hex' -- 'octal'
