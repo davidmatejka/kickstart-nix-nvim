@@ -86,6 +86,8 @@ let
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
     which-key-nvim
+    plenary-nvim
+    # ^ harpoon2 depends on plenary
     harpoon2
   ];
 
