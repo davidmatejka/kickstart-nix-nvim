@@ -85,6 +85,7 @@ let
     plenary-nvim
     # ^ harpoon2 depends on plenary
     harpoon2
+    vimtex
   ];
 
   extraPackages = with pkgs; [
